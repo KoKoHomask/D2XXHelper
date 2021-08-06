@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="amd64\ftbusui.dll" />
+    <None Remove="amd64\ftcserco.dll" />
+    <None Remove="amd64\ftd2xx.lib" />
+    <None Remove="amd64\ftd2xx64.dll" />
+    <None Remove="amd64\ftdibus.sys" />
+    <None Remove="amd64\ftlang.dll" />
+    <None Remove="amd64\ftser2k.sys" />
+    <None Remove="amd64\ftserui2.dll" />
+    <None Remove="i386\ftbusui.dll" />
+    <None Remove="i386\ftcserco.dll" />
+    <None Remove="i386\ftd2xx.dll" />
+    <None Remove="i386\ftd2xx.lib" />
+    <None Remove="i386\ftdibus.sys" />
+    <None Remove="i386\ftlang.dll" />
+    <None Remove="i386\ftser2k.sys" />
+    <None Remove="i386\ftserui2.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="amd64\ftbusui.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftcserco.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftd2xx.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftd2xx64.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftdibus.sys">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftlang.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftser2k.sys">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="amd64\ftserui2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="i386\ftbusui.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftcserco.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftd2xx.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftd2xx.lib">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftdibus.sys">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftlang.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftser2k.sys">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="i386\ftserui2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>
