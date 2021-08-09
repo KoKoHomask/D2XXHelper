@@ -2,8 +2,26 @@
 
 namespace D2XXHelper
 {
+    public enum FT_WORDLENGTH
+    {
+        FT_BITS_8 = 8,
+        FT_BITS_7 = 7
+    }
+    public enum FT_STOPBITS
+    {
+        FT_STOP_BITS_1 = 0,
+        FT_STOP_BITS_2 = 2,
+    }
+    public enum FT_PARITY
+    {
+        FT_PARITY_NONE = 0,
+        FT_PARITY_ODD,
+        FT_PARITY_EVEN,
+        FT_PARITY_MARK,
+        FT_PARITY_SPACE
+    }
 
-	public enum FT_ERROR
+    public enum FT_ERROR
 	{
 		// Token: 0x04000057 RID: 87
 		FT_NO_ERROR,
