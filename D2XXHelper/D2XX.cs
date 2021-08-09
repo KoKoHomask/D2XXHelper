@@ -9,7 +9,14 @@ namespace D2XXHelper
         //private IntPtr hFTD2XXDLL = IntPtr.Zero;
 		private IntPtr ftHandle = IntPtr.Zero;
 		ID2XXFunction d2XXFunction;
-        public D2XX()
+		public bool IsOpen
+		{
+			get
+			{
+				return !(this.ftHandle == IntPtr.Zero);
+			}
+		}
+		public D2XX()
         {
 			if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
 			{
