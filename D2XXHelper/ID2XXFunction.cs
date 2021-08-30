@@ -19,5 +19,10 @@ namespace D2XXHelper
         FT_STATUS tFT_Write(IntPtr ftHandle, byte[] lpBuffer, uint dwBytesToWrite, ref uint lpdwBytesWritten);
         FT_STATUS tFT_Read(IntPtr ftHandle, byte[] lpBuffer, uint dwBytesToRead, ref uint lpdwBytesReturned);
         FT_STATUS tFT_SetBitMode(IntPtr ftHandle, byte ucMask, byte ucMode);
+
+        FT_STATUS tFT_SetRts(IntPtr ftHandle);
+        FT_STATUS tFT_ClrRts(IntPtr ftHandle);
+        FT_STATUS tFT_SetDtr(IntPtr ftHandle);
+        FT_STATUS tFT_ClrDtr(IntPtr ftHandle);
     }
 }

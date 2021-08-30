@@ -236,6 +236,43 @@ namespace D2XXHelper
 			return ft_STATUS;
 		}
 
+        public FT_STATUS SetDTR(bool Enable)
+        {
+            FT_STATUS result = FT_STATUS.FT_OTHER_ERROR;
+            if (d2XXFunction == null)
+                return result;
+
+            if (this.ftHandle != IntPtr.Zero)
+            {
+                if (Enable)
+                    result = d2XXFunction.tFT_SetDtr(this.ftHandle);
+                else
+                    result = d2XXFunction.tFT_ClrDtr(this.ftHandle);
+            }
+            return result;
+        }
+
+		public FT_STATUS SetRTS(bool Enable)
+		{
+			FT_STATUS result = FT_STATUS.FT_OTHER_ERROR;
+			if (d2XXFunction == null)
+			{
+				return result;
+			}
+			if (this.ftHandle != IntPtr.Zero)
+			{
+				if (Enable)
+				{
+					result = d2XXFunction.tFT_SetRts(this.ftHandle);
+				}
+				else
+				{
+					result = d2XXFunction.tFT_ClrRts(this.ftHandle);
+				}
+			}
+			return result;
+		}
+
 
 	}
 }
